@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F7673EC2A337B6300387F23 /* P2P_BluetoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */; };
-		8F7673EE2A337B6300387F23 /* chatBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673ED2A337B6300387F23 /* chatBoxView.swift */; };
+		8F7673EE2A337B6300387F23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673ED2A337B6300387F23 /* ContentView.swift */; };
 		8F7673F02A337B6500387F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7673EF2A337B6500387F23 /* Assets.xcassets */; };
 		8F7673F32A337B6500387F23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7673F22A337B6500387F23 /* Preview Assets.xcassets */; };
 		8F7673FD2A337B6500387F23 /* P2P_BluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673FC2A337B6500387F23 /* P2P_BluetoothTests.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		8F7673E82A337B6300387F23 /* P2P_Bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2P_Bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_BluetoothApp.swift; sourceTree = "<group>"; };
-		8F7673ED2A337B6300387F23 /* chatBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatBoxView.swift; sourceTree = "<group>"; };
+		8F7673ED2A337B6300387F23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F7673EF2A337B6500387F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F7673F22A337B6500387F23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F7673F82A337B6500387F23 /* P2P_BluetoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2P_BluetoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */,
-				8F7673ED2A337B6300387F23 /* chatBoxView.swift */,
+				8F7673ED2A337B6300387F23 /* ContentView.swift */,
 				8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */,
 				8F7674152A339B7700387F23 /* chatBox.swift */,
 				8F7673EF2A337B6500387F23 /* Assets.xcassets */,
@@ -264,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F7673EE2A337B6300387F23 /* chatBoxView.swift in Sources */,
+				8F7673EE2A337B6300387F23 /* ContentView.swift in Sources */,
 				8F7674162A339B7700387F23 /* chatBox.swift in Sources */,
 				8F7673EC2A337B6300387F23 /* P2P_BluetoothApp.swift in Sources */,
 			);

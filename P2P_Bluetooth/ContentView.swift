@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct chatBoxView: View {
+struct ContentView: View {
     var body: some View {
         VStack{
             textBoxView()
@@ -34,6 +34,6 @@ struct textBoxView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        chatBoxView()
+        ContentView()
     }
 }
