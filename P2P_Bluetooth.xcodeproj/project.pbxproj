@@ -15,6 +15,7 @@
 		8F7674072A337B6500387F23 /* P2P_BluetoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7674062A337B6500387F23 /* P2P_BluetoothUITests.swift */; };
 		8F7674092A337B6500387F23 /* P2P_BluetoothUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7674082A337B6500387F23 /* P2P_BluetoothUITestsLaunchTests.swift */; };
 		8F7674162A339B7700387F23 /* chatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7674152A339B7700387F23 /* chatBox.swift */; };
+		8F7674182A33B15100387F23 /* StoryboardForChatBox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		8F7674062A337B6500387F23 /* P2P_BluetoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_BluetoothUITests.swift; sourceTree = "<group>"; };
 		8F7674082A337B6500387F23 /* P2P_BluetoothUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_BluetoothUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8F7674152A339B7700387F23 /* chatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatBox.swift; sourceTree = "<group>"; };
+		8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardForChatBox.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */,
 				8F7673ED2A337B6300387F23 /* chatBoxView.swift */,
+				8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */,
 				8F7674152A339B7700387F23 /* chatBox.swift */,
 				8F7673EF2A337B6500387F23 /* Assets.xcassets */,
 				8F7673F12A337B6500387F23 /* Preview Content */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7673F32A337B6500387F23 /* Preview Assets.xcassets in Resources */,
+				8F7674182A33B15100387F23 /* StoryboardForChatBox.storyboard in Resources */,
 				8F7673F02A337B6500387F23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
