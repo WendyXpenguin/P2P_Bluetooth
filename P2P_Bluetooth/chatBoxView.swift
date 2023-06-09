@@ -22,7 +22,7 @@ struct textBoxView: View {
                 .stroke(lineWidth: 5)
         }
         .frame(width: 270, height: 570.0)
-        .foregroundColor(Color.mint)
+        .foregroundColor(Color.blue)
         .padding([.leading, .bottom, .trailing], 40.0)
     }
 }
