@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ChatRoomView: View {
+    @EnvironmentObject var viewModel: ChatsViewModel
+    let chat: Chat
     @State private var messageText = ""
     @State var messages: [String] = ["Let's chat!"]
     var body: some View {
@@ -33,6 +35,10 @@ struct ChatRoomView: View {
                                 .padding(.horizontal, 16)
                                 .cornerRadius(0)
                                 .padding(.bottom, 10)
+                                .onAppear {
+                                    viewModel.markAsUnread(false, chat: chat)
+                                    // TODO: fix this, the bubble issue
+                                }
                         }
                     } else {
                         HStack{
@@ -82,6 +88,7 @@ struct ChatRoomView: View {
 
 struct ChatRoomView_Previews: PreviewProvider {
             static var previews: some View {
-                ChatRoomView()
+                ChatRoomView(chat: Chat.sampleChat[0])
+                    .environmentObject(ChatsViewModel())
             }
         }

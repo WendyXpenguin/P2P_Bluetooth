@@ -20,7 +20,7 @@ struct ListNameView: View {
                 ZStack{
                     ChatRow(chat: chat)
                     NavigationLink(destination: {
-                        ChatRoomView()
+                        ChatRoomView(chat: Chat.sampleChat[0])
                         
                     }) {
                         EmptyView()
