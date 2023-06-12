@@ -9,17 +9,25 @@ import SwiftUI
 
 struct ChatRoomView: View {
     
-    @EnvironmentObject var viewModel: ChatsViewModel
-    
+    @EnvironmentObject var ViewModel: ChatsViewModel
+
     let chat: Chat
     
     var body: some View {
-        Text(chat.person.name)
+        VStack(spacing: 0) {
+            Text("Let's chat!")
+        }
+        .padding(.top, 1)
+        .navigationBarTitleDisplayMode(.inline)
+        .onAppear{
+            ViewModel.markAsUnread(false, chat: chat)
+        }
     }
 }
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
         ChatRoomView(chat: Chat.sampleChat[0])
+            .environmentObject(ChatsViewModel())
     }
 }

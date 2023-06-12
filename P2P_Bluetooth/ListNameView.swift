@@ -20,7 +20,8 @@ struct ListNameView: View {
                 ZStack{
                     ChatRow(chat: chat)
                     NavigationLink(destination: {
-                        ChatRoomView(chat: Chat.sampleChat[0])
+                        ChatRoomView(chat: chat)
+                            .environmentObject(ViewModel)
                         
                     }) {
                         EmptyView()
@@ -28,6 +29,17 @@ struct ListNameView: View {
                     .buttonStyle(PlainButtonStyle())
                     .frame(width: 0)
                     .opacity(0)
+                }
+                .swipeActions(edge: .leading, allowsFullSwipe: true) {
+                    Button(action: {
+                        ViewModel.markAsUnread(true, chat: chat)
+                    }) {
+                        if chat.hasUnreadMessage {
+                            Label("Read", systemImage: "text.bubble")
+                        } else {
+                            Label("Read", systemImage: "circle.fill")
+                        }
+                    }
                 }
             }
             }
