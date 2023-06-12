@@ -22,9 +22,36 @@ struct ContentView: View {
             }
             ScrollView{
                 ForEach(messages, id: \.self) {
-                    message in Text(message)
-                }
-            }
+                    message in if message.contains("[USER]") {
+                        let newMessage = message.replacingOccurrences(of: "[USER]", with: "")
+                        HStack{
+                            Spacer()
+                            Text(newMessage)
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(.mint.opacity(0.8))
+                                .padding(.horizontal, 16)
+                                .cornerRadius(0)
+                                .padding(.bottom, 10)
+                        }
+                    } else {
+                        HStack{
+                            Text(message)
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(.mint.opacity(0.8))
+                                .padding(.horizontal, 16)
+                                .cornerRadius(0)
+                                .padding(.bottom, 10)
+                            Spacer()
+                        }
+                    }
+                }.rotationEffect(.degrees(180))
+            }.rotationEffect(.degrees(180))
+                .background(Color.gray.opacity(0.1))
+            
+            
+            
             HStack{
                 TextField("Type your message here", text : $messageText)
                     .padding()
