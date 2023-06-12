@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F7673EC2A337B6300387F23 /* P2P_BluetoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */; };
-		8F7673EE2A337B6300387F23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673ED2A337B6300387F23 /* ContentView.swift */; };
+		8F7673EE2A337B6300387F23 /* ListNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673ED2A337B6300387F23 /* ListNameView.swift */; };
 		8F7673F02A337B6500387F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7673EF2A337B6500387F23 /* Assets.xcassets */; };
 		8F7673F32A337B6500387F23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7673F22A337B6500387F23 /* Preview Assets.xcassets */; };
 		8F7673FD2A337B6500387F23 /* P2P_BluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673FC2A337B6500387F23 /* P2P_BluetoothTests.swift */; };
@@ -17,6 +17,10 @@
 		8F7674162A339B7700387F23 /* chatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7674152A339B7700387F23 /* chatBox.swift */; };
 		8F7674182A33B15100387F23 /* StoryboardForChatBox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */; };
 		8F863A9A2A3780E900226E99 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863A992A3780E900226E99 /* ChatRow.swift */; };
+		8F863A9C2A37836000226E99 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863A9B2A37836000226E99 /* ChatModel.swift */; };
+		8F863A9E2A378A4F00226E99 /* Date+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863A9D2A378A4F00226E99 /* Date+Helper.swift */; };
+		8F863AA02A378F4A00226E99 /* ChatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863A9F2A378F4A00226E99 /* ChatsViewModel.swift */; };
+		8F863AA22A37921A00226E99 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863AA12A37921A00226E99 /* ChatRoomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 /* Begin PBXFileReference section */
 		8F7673E82A337B6300387F23 /* P2P_Bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2P_Bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_BluetoothApp.swift; sourceTree = "<group>"; };
-		8F7673ED2A337B6300387F23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F7673ED2A337B6300387F23 /* ListNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNameView.swift; sourceTree = "<group>"; };
 		8F7673EF2A337B6500387F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F7673F22A337B6500387F23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F7673F82A337B6500387F23 /* P2P_BluetoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2P_BluetoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +54,10 @@
 		8F7674152A339B7700387F23 /* chatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatBox.swift; sourceTree = "<group>"; };
 		8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardForChatBox.storyboard; sourceTree = "<group>"; };
 		8F863A992A3780E900226E99 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		8F863A9B2A37836000226E99 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		8F863A9D2A378A4F00226E99 /* Date+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helper.swift"; sourceTree = "<group>"; };
+		8F863A9F2A378F4A00226E99 /* ChatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModel.swift; sourceTree = "<group>"; };
+		8F863AA12A37921A00226E99 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +108,12 @@
 		8F7673EA2A337B6300387F23 /* P2P_Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				8F863AA12A37921A00226E99 /* ChatRoomView.swift */,
+				8F7673ED2A337B6300387F23 /* ListNameView.swift */,
 				8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */,
-				8F7673ED2A337B6300387F23 /* ContentView.swift */,
+				8F863A9F2A378F4A00226E99 /* ChatsViewModel.swift */,
+				8F863A9D2A378A4F00226E99 /* Date+Helper.swift */,
+				8F863A9B2A37836000226E99 /* ChatModel.swift */,
 				8F863A992A3780E900226E99 /* ChatRow.swift */,
 				8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */,
 				8F7674152A339B7700387F23 /* chatBox.swift */,
@@ -267,10 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F863A9C2A37836000226E99 /* ChatModel.swift in Sources */,
 				8F863A9A2A3780E900226E99 /* ChatRow.swift in Sources */,
-				8F7673EE2A337B6300387F23 /* ContentView.swift in Sources */,
+				8F7673EE2A337B6300387F23 /* ListNameView.swift in Sources */,
 				8F7674162A339B7700387F23 /* chatBox.swift in Sources */,
 				8F7673EC2A337B6300387F23 /* P2P_BluetoothApp.swift in Sources */,
+				8F863AA22A37921A00226E99 /* ChatRoomView.swift in Sources */,
+				8F863A9E2A378A4F00226E99 /* Date+Helper.swift in Sources */,
+				8F863AA02A378F4A00226E99 /* ChatsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

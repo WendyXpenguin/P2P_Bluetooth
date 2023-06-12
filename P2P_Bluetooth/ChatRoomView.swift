@@ -1,29 +1,16 @@
 //
-//  ContentView.swift
+//  ChatRoomView.swift
 //  P2P_Bluetooth
 //
-//  Created by LostZ on 2023/6/9.
-// This is the View for our APP
+//  Created by LostZ on 2023/6/12.
+//
 
 import SwiftUI
 
-struct ContentView: View {
+struct ChatRoomView: View {
     @State private var messageText = ""
     @State var messages: [String] = ["Let's chat!"]
     var body: some View {
-        NavigationView{
-            List {ForEach(0 ..< 10) {
-                i in Text(String(i))
-            }
-          }
-            .listStyle(PlainListStyle())
-            .navigationTitle("Friends")
-            .navigationBarItems(trailing: Button(action: {}){
-                Image(systemName: "plus.message")
-                    .foregroundColor(Color.mint)
-                
-            })
-        }
         VStack{
             HStack{
                 Text("UserName")
@@ -93,11 +80,8 @@ struct ContentView: View {
     }
 }
 
-// two maps to handle the user names and IDs
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+struct ChatRoomView_Previews: PreviewProvider {
+            static var previews: some View {
+                ChatRoomView()
+            }
+        }
