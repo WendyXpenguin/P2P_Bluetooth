@@ -22,7 +22,6 @@ struct ListNameView: View {
                     NavigationLink(destination: {
                         ChatRoomView(chat: chat)
                             .environmentObject(ViewModel)
-                        
                     }) {
                         EmptyView()
                     }
@@ -32,15 +31,15 @@ struct ListNameView: View {
                 }
                 .swipeActions(edge: .leading, allowsFullSwipe: true) {
                     Button(action: {
-                        ViewModel.markAsUnread(true, chat: chat)
+                        ViewModel.markAsUnread(!chat.hasUnreadMessage, chat: chat)
                     }) {
                         if chat.hasUnreadMessage {
-                            Label("Read", systemImage: "text.bubble")
+                            Label("Read", systemImage: "pencil.circle")
                         } else {
                             Label("Read", systemImage: "circle.fill")
                         }
                     }
-                }
+                }.tint(.mint)
             }
             }
             .listStyle(PlainListStyle())
