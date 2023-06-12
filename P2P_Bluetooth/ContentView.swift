@@ -11,6 +11,19 @@ struct ContentView: View {
     @State private var messageText = ""
     @State var messages: [String] = ["Let's chat!"]
     var body: some View {
+        NavigationView{
+            List {ForEach(0 ..< 10) {
+                i in Text(String(i))
+            }
+          }
+            .listStyle(PlainListStyle())
+            .navigationTitle("Friends")
+            .navigationBarItems(trailing: Button(action: {}){
+                Image(systemName: "plus.message")
+                    .foregroundColor(Color.mint)
+                
+            })
+        }
         VStack{
             HStack{
                 Text("UserName")
