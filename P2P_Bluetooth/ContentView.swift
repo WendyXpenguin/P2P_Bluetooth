@@ -11,10 +11,6 @@ struct ContentView: View {
     @State private var messageText = ""
     @State var messages: [String] = ["Let's chat!"]
     var body: some View {
-        VStack {
-            Text("Hello, what a good day!")
-        }
-        .padding()
         VStack{
             HStack{
                 Text("UserName")
