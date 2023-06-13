@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginPageView: View {
-    @State private var username = ""
+    @State public var username = ""
     @State private var showingLoginScreen = false
     
     
@@ -62,5 +62,6 @@ struct LoginPageView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         LoginPageView()
+        
     }
 }
