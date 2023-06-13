@@ -11,12 +11,14 @@ import Foundation
 func userNames() -> [String: String] {
     
     // example of list contains two users and an empty dict
-    // var ListOfNames = ["Sunny", "Dr. Mendes"]
+    var ListOfNames = ["Sunny", "Dr. Mendes"]
     var dictionaryOfNames: NSMutableDictionary = [:]
     
     // UUID stuff
-    let id = UUID().uuidString
-    dictionaryOfNames[id] = "Sunny"
+    
+    for name in ListOfNames {
+        let id = UUID().uuidString
+        dictionaryOfNames[id] = name
+    }
     return dictionaryOfNames as! [String : String]
 }
-
