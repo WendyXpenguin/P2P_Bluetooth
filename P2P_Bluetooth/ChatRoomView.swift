@@ -130,17 +130,16 @@ struct ChatRoomView: View {
                         HStack {
                             ZStack {
                                 Text(message.text)
-                                    .padding(.horizontal)
-                                    .padding(.vertical, 12)
-                                    .background(isReceived ? Color.black.opacity(0.2) : .mint.opacity(0.9))
-                                    .cornerRadius(13)
                             }
+                            .padding(.horizontal)
+                            .padding(.vertical, 12)
+                            .background(isReceived ? Color.black.opacity(0.2) : .mint.opacity(0.9))
+                            .cornerRadius(13)
                             .frame(width: viewWidth * 0.7, alignment: isReceived ? .leading : .trailing)
                             .padding(.vertical)
-                            // .background(Color.blue)
                         }
                         .frame(maxWidth: .infinity, alignment: isReceived ? .leading : .trailing)
-                        .id(message.id) // improtant for automatic scrolling later
+                        .id(message.id)
                     }
                 }
             }
