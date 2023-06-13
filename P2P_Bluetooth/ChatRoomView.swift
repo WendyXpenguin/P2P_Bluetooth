@@ -152,7 +152,7 @@ struct ChatRoomView: View {
                 .frame(width: 120)
                 .padding(.vertical, 5)
                 .foregroundColor(.white)
-                .background(Capsule().foregroundColor(.mint))
+                .background(Capsule().foregroundColor(.black.opacity(0.2)))
         }
         .padding(.vertical, 5)
         .frame(maxWidth: . infinity)
