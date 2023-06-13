@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F262A4C2A38E16F006DCB9B /* uniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F262A4B2A38E16F006DCB9B /* uniqueID.swift */; };
+		8F262A4E2A38F0E7006DCB9B /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F262A4D2A38F0E7006DCB9B /* LoginPage.swift */; };
 		8F7673EC2A337B6300387F23 /* P2P_BluetoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */; };
 		8F7673EE2A337B6300387F23 /* ListNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673ED2A337B6300387F23 /* ListNameView.swift */; };
 		8F7673F02A337B6500387F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7673EF2A337B6500387F23 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		8F262A4B2A38E16F006DCB9B /* uniqueID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uniqueID.swift; sourceTree = "<group>"; };
+		8F262A4D2A38F0E7006DCB9B /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		8F7673E82A337B6300387F23 /* P2P_Bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2P_Bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_BluetoothApp.swift; sourceTree = "<group>"; };
 		8F7673ED2A337B6300387F23 /* ListNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNameView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		8F7673EA2A337B6300387F23 /* P2P_Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				8F262A4D2A38F0E7006DCB9B /* LoginPage.swift */,
 				8F863AA12A37921A00226E99 /* ChatRoomView.swift */,
 				8F262A4B2A38E16F006DCB9B /* uniqueID.swift */,
 				8F7673ED2A337B6300387F23 /* ListNameView.swift */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F863A9C2A37836000226E99 /* ChatModel.swift in Sources */,
+				8F262A4E2A38F0E7006DCB9B /* LoginPage.swift in Sources */,
 				8F863A9A2A3780E900226E99 /* ChatRow.swift in Sources */,
 				8F7673EE2A337B6300387F23 /* ListNameView.swift in Sources */,
 				8F7673EC2A337B6300387F23 /* P2P_BluetoothApp.swift in Sources */,
