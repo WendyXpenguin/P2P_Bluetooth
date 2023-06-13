@@ -41,8 +41,8 @@ struct Message: Identifiable {
     }
 }
 
-
 extension Chat {
+    
     static let sampleChat = [
         Chat(person: Person(name: "Wendy", imgString: "img1"), messages: [
             Message("Hey Wendy", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
