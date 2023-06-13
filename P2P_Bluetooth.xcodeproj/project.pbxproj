@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F262A4C2A38E16F006DCB9B /* uniqueID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F262A4B2A38E16F006DCB9B /* uniqueID.swift */; };
 		8F7673EC2A337B6300387F23 /* P2P_BluetoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */; };
 		8F7673EE2A337B6300387F23 /* ListNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673ED2A337B6300387F23 /* ListNameView.swift */; };
 		8F7673F02A337B6500387F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7673EF2A337B6500387F23 /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		8F7673FD2A337B6500387F23 /* P2P_BluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7673FC2A337B6500387F23 /* P2P_BluetoothTests.swift */; };
 		8F7674072A337B6500387F23 /* P2P_BluetoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7674062A337B6500387F23 /* P2P_BluetoothUITests.swift */; };
 		8F7674092A337B6500387F23 /* P2P_BluetoothUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7674082A337B6500387F23 /* P2P_BluetoothUITestsLaunchTests.swift */; };
-		8F7674162A339B7700387F23 /* chatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7674152A339B7700387F23 /* chatBox.swift */; };
 		8F7674182A33B15100387F23 /* StoryboardForChatBox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */; };
 		8F863A9A2A3780E900226E99 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863A992A3780E900226E99 /* ChatRow.swift */; };
 		8F863A9C2A37836000226E99 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863A9B2A37836000226E99 /* ChatModel.swift */; };
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F262A4B2A38E16F006DCB9B /* uniqueID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uniqueID.swift; sourceTree = "<group>"; };
 		8F7673E82A337B6300387F23 /* P2P_Bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2P_Bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_BluetoothApp.swift; sourceTree = "<group>"; };
 		8F7673ED2A337B6300387F23 /* ListNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNameView.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		8F7674022A337B6500387F23 /* P2P_BluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2P_BluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7674062A337B6500387F23 /* P2P_BluetoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_BluetoothUITests.swift; sourceTree = "<group>"; };
 		8F7674082A337B6500387F23 /* P2P_BluetoothUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_BluetoothUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8F7674152A339B7700387F23 /* chatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatBox.swift; sourceTree = "<group>"; };
 		8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardForChatBox.storyboard; sourceTree = "<group>"; };
 		8F863A992A3780E900226E99 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 		8F863A9B2A37836000226E99 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
@@ -109,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				8F863AA12A37921A00226E99 /* ChatRoomView.swift */,
+				8F262A4B2A38E16F006DCB9B /* uniqueID.swift */,
 				8F7673ED2A337B6300387F23 /* ListNameView.swift */,
 				8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */,
 				8F863A9F2A378F4A00226E99 /* ChatsViewModel.swift */,
@@ -116,7 +117,6 @@
 				8F863A9B2A37836000226E99 /* ChatModel.swift */,
 				8F863A992A3780E900226E99 /* ChatRow.swift */,
 				8F7674172A33B15100387F23 /* StoryboardForChatBox.storyboard */,
-				8F7674152A339B7700387F23 /* chatBox.swift */,
 				8F7673EF2A337B6500387F23 /* Assets.xcassets */,
 				8F7673F12A337B6500387F23 /* Preview Content */,
 			);
@@ -282,9 +282,9 @@
 				8F863A9C2A37836000226E99 /* ChatModel.swift in Sources */,
 				8F863A9A2A3780E900226E99 /* ChatRow.swift in Sources */,
 				8F7673EE2A337B6300387F23 /* ListNameView.swift in Sources */,
-				8F7674162A339B7700387F23 /* chatBox.swift in Sources */,
 				8F7673EC2A337B6300387F23 /* P2P_BluetoothApp.swift in Sources */,
 				8F863AA22A37921A00226E99 /* ChatRoomView.swift in Sources */,
+				8F262A4C2A38E16F006DCB9B /* uniqueID.swift in Sources */,
 				8F863A9E2A378A4F00226E99 /* Date+Helper.swift in Sources */,
 				8F863AA02A378F4A00226E99 /* ChatsViewModel.swift in Sources */,
 			);
