@@ -133,7 +133,7 @@ struct ChatRoomView: View {
                             }
                             .padding(.horizontal)
                             .padding(.vertical, 12)
-                            .background(isReceived ? Color.black.opacity(0.2) : .mint.opacity(0.9))
+                            .background(isReceived ? Color.brown.opacity(0.5) : .mint.opacity(0.9))
                             .cornerRadius(13)
                             .frame(width: viewWidth * 0.7, alignment: isReceived ? .leading : .trailing)
                             .padding(.vertical)
