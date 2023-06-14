@@ -9,9 +9,6 @@ import SwiftUI
 
 struct ListNameView: View {
     @StateObject var ViewModel = ChatsViewModel()
-    
-    let chats = Chat.sampleChat
-    
     @State private var query = ""
     
 

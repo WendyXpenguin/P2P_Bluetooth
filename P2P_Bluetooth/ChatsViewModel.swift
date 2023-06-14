@@ -8,6 +8,13 @@
 import Foundation
 
 class ChatsViewModel: ObservableObject {
+    
+    // arrays of persons, messages, and chats
+    // person[0], message[0]
+    // pass the name of the users
+    // 1. do the thing above
+    // 2. create a map from person to chat - connect the person to the login
+    // 3. switch
     @Published var chats = Chat.sampleChat
     func getSortedFiltereChats(query: String) -> [Chat] {
         let sortedChats = chats.sorted {

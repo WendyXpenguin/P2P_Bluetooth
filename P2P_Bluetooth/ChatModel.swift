@@ -18,6 +18,7 @@ struct Person: Identifiable {
     let id = UUID()
     let name: String
     let imgString: String
+    // static persons list
 }
 
 struct Message: Identifiable {
