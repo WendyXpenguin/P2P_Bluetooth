@@ -25,18 +25,18 @@ struct LoginPageView: View {
                     .foregroundColor(.white)
 
                 VStack {
-                    Text("Login")
+                    Text("Sign In")
                         .font(.largeTitle)
                         .bold()
                         .padding()
                     
-                    TextField("Username", text: $username)
+                    TextField("Enter Your Name", text: $username)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
-                    Button("Login") {
+                    Button("Sign In") {
                         authenticateUser(username: username)
                         }
                     .foregroundColor(.white)
