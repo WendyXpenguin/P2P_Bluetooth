@@ -16,7 +16,7 @@ class ChatsViewModel: ObservableObject {
         Message("Oh wow, that is really cool", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 2)),
         Message("Yeah, I have been pretty busy with it", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1))
                 ]
-    static let chats = [Chat(person: persons[0], messages: messages[0])]
+    static let chats = [Chat(person: persons[0], messages: messages)]
     
     // arrays of persons, messages, and chats
     // person[0], message[0]
