@@ -14,9 +14,11 @@ class ChatsViewModel: ObservableObject {
         Message("Hey Sunny, What are you doing?", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
         Message("I am jsut developing an WhatsApp Clone App", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
         Message("Oh wow, that is really cool", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 2)),
-        Message("Yeah, I have been pretty busy with it", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1))
+        Message("Yeah, I have been pretty busy with it", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1)),
+        Message("Hi Sunny", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
+        Message("I am bored", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3))
                 ]
-    static let chats = [Chat(person: persons[0], messages: messages)]
+    static let chats = [Chat(person: persons[0], messages: messages), Chat(person: persons[3], messages: messages)]
     
     // arrays of persons, messages, and chats
     // person[0], message[0]
