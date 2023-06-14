@@ -108,9 +108,9 @@
 		8F7673EA2A337B6300387F23 /* P2P_Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				8F262A4B2A38E16F006DCB9B /* uniqueID.swift */,
 				8F262A4D2A38F0E7006DCB9B /* LoginPage.swift */,
 				8F863AA12A37921A00226E99 /* ChatRoomView.swift */,
-				8F262A4B2A38E16F006DCB9B /* uniqueID.swift */,
 				8F7673ED2A337B6300387F23 /* ListNameView.swift */,
 				8F7673EB2A337B6300387F23 /* P2P_BluetoothApp.swift */,
 				8F863A9F2A378F4A00226E99 /* ChatsViewModel.swift */,

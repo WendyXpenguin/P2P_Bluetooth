@@ -14,6 +14,7 @@ struct ListNameView: View {
     
     @State private var query = ""
     
+
     var body: some View {
         NavigationView{
             List {ForEach(ViewModel.getSortedFiltereChats(query: query)) { chat in
@@ -57,6 +58,7 @@ struct ListNameView: View {
         // two maps to handle the user names and IDs
         
         
+
 struct ListNameView_Previews: PreviewProvider {
             static var previews: some View {
                 ListNameView()
