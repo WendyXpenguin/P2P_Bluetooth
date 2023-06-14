@@ -8,6 +8,15 @@
 import Foundation
 
 class ChatsViewModel: ObservableObject {
+    static let persons = [Person(name: "Wendy", imgString: "img1"), "Wendy", "Dr. Mendes", "Sam", "Lily", "Erica", "Josh"]
+    static let messages = [
+        Message("Hey Wendy", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+        Message("Hey Sunny, What are you doing?", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
+        Message("I am jsut developing an WhatsApp Clone App", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+        Message("Oh wow, that is really cool", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 2)),
+        Message("Yeah, I have been pretty busy with it", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1))
+                ]
+    static let chats = [Chat(persons[0], message[0]), Chat(person[1], message[1])]
     
     // arrays of persons, messages, and chats
     // person[0], message[0]
@@ -15,7 +24,7 @@ class ChatsViewModel: ObservableObject {
     // 1. do the thing above
     // 2. create a map from person to chat - connect the person to the login
     // 3. switch
-    @Published var chats = Chat.sampleChat
+    @Published var chats = chats
     func getSortedFiltereChats(query: String) -> [Chat] {
         let sortedChats = chats.sorted {
             guard let date1 = $0.messages.last?.date else {return false}
