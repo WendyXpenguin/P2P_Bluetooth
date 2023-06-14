@@ -8,7 +8,7 @@
 import Foundation
 
 class ChatsViewModel: ObservableObject {
-    static let persons = [Person(name: "Wendy", imgString: "img1"), "Wendy", "Dr. Mendes", "Sam", "Lily", "Erica", "Josh"]
+    static let persons = [Person(name: "Wendy", imgString: "img1"), Person(name:"Dr. Mendes", imgString: "img2"), Person(name: "Sam", imgString: "img3"), Person(name: "Lily", imgString: "img4"), Person(name: "Erica", imgString: "img5"), Person(name: "Josh", imgString: "img6")]
     static let messages = [
         Message("Hey Wendy", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
         Message("Hey Sunny, What are you doing?", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
@@ -16,7 +16,7 @@ class ChatsViewModel: ObservableObject {
         Message("Oh wow, that is really cool", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 2)),
         Message("Yeah, I have been pretty busy with it", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1))
                 ]
-    static let chats = [Chat(persons[0], message[0]), Chat(person[1], message[1])]
+    static let chats = [Chat(person: persons[0], messages: messages[0])]
     
     // arrays of persons, messages, and chats
     // person[0], message[0]
