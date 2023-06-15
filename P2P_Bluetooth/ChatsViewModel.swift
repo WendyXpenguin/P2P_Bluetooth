@@ -8,6 +8,10 @@
 import Foundation
 
 class ChatsViewModel: ObservableObject {
+    // arrays of persons, messages, and chats
+    // person[0], message[0]
+    // pass the name of the users
+    // 1. do the thing above
     static let persons = [Person(name: "Wendy", imgString: "img1"), Person(name:"Dr. Mendes", imgString: "img2"), Person(name: "Sam", imgString: "img3"), Person(name: "Lily", imgString: "img4"), Person(name: "Erica", imgString: "img5"), Person(name: "Josh", imgString: "img6")]
     static let messages = [
         Message("Hey Wendy", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
@@ -27,11 +31,12 @@ class ChatsViewModel: ObservableObject {
         Chat(person: persons[5], messages: [messages[7], messages[8]])
     ]
     
-    // arrays of persons, messages, and chats
-    // person[0], message[0]
-    // pass the name of the users
-    // 1. do the thing above
     // 2. create a map from person to chat - connect the person to the login
+    static let chatsMap = ["Wendy" : chats[0],
+                           "Lily" :  chats[1],
+                           "Josh" :  chats[2]]
+    
+    
     // 3. switch
     @Published var chats = chats
     func getSortedFiltereChats(query: String) -> [Chat] {

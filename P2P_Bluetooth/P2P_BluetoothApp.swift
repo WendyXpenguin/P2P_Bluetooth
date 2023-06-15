@@ -11,7 +11,7 @@ import SwiftUI
 struct P2P_BluetoothApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginPageView()
+            ListNameView()
         }
     }
 }
