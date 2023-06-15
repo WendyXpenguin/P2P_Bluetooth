@@ -16,12 +16,15 @@ class ChatsViewModel: ObservableObject {
         Message("Oh wow, that is really cool", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 2)),
         Message("Yeah, I have been pretty busy with it", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1)),
         Message("Hi Sunny", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
-        Message("I am bored", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3))
+        Message("I am bored", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
+        Message("How are you doing today?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 10)),
+        Message("Not much. Just enjoying the summer", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 10))
     ]
     
     static let chats = [
         Chat(person: persons[0], messages: [messages[0], messages[1], messages[2], messages[3], messages[4]]),
-        Chat(person: persons[3], messages: [messages[5], messages[6]])
+        Chat(person: persons[3], messages: [messages[5], messages[6]]),
+        Chat(person: persons[5], messages: [messages[7], messages[8]])
     ]
     
     // arrays of persons, messages, and chats
