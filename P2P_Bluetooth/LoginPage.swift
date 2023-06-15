@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginPageView: View {
-    @State private var username: String = UserDefaults.standard.string(forKey: UUID().uuidString) ?? ""
+    @State public var username: String = UserDefaults.standard.string(forKey: UUID().uuidString) ?? ""
     @State private var showingLoginScreen = false
     
     var body: some View {

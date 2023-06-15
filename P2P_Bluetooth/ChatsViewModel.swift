@@ -32,10 +32,10 @@ class ChatsViewModel: ObservableObject {
     ]
     
     // 2. create a map from person to chat - connect the person to the login
-    static let chatsMap = ["Wendy" : chats[0],
-                           "Lily" :  chats[1],
-                           "Josh" :  chats[2]]
-    
+    static let chatsMap = ["Wendy": chats[0],
+                           "Lily" : chats[1],
+                           "Josh" : chats[2]
+    ]
     
     // 3. switch
     @Published var chats = chats
