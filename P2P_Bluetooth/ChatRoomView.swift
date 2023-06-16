@@ -27,8 +27,7 @@ struct ChatRoomView: View {
                                presentationMode.wrappedValue.dismiss()
                            }, label: {
                                Image(systemName: "arrow.left")
-                               .foregroundColor(.mint)
-                               .padding(.top)
+                               .foregroundColor(.black)
                                Text("")
                            })
                      
@@ -62,7 +61,7 @@ struct ChatRoomView: View {
         }
         .padding(.top, 1)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarItems(leading: navBarLeadingBtn, trailing: navBarTrailingBtn)
+        .navigationBarItems(leading: navBarTrailingBtn, trailing: navBarLeadingBtn)
         .onAppear{
             ViewModel.markAsUnread(false, chat: chat)
         }
@@ -79,6 +78,7 @@ struct ChatRoomView: View {
             }
             .foregroundColor(.black)
         }
+        .padding(.trailing)
     }
     
     var navBarTrailingBtn: some View {
