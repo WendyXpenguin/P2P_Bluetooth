@@ -8,11 +8,13 @@
 import Foundation
 
 class ChatsViewModel: ObservableObject {
-    // arrays of persons, messages, and chats
-    // person[0], message[0]
-    // pass the name of the usersz
-    // 1. do the thing above
+    
+    init() {
+        
+    }
+    
     static let persons = [Person(name: "Wendy", imgString: "img1"), Person(name:"Dr. Mendes", imgString: "img2"), Person(name: "Sam", imgString: "img3"), Person(name: "Lily", imgString: "img4"), Person(name: "Erica", imgString: "img5"), Person(name: "Josh", imgString: "img6")]
+    
     static let messages = [
         Message("Hey Wendy", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
         Message("Hey Sunny, What are you doing?", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
@@ -25,21 +27,35 @@ class ChatsViewModel: ObservableObject {
         Message("Not much. Just enjoying the summer", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 10))
     ]
     
-    static let chats = [
-        Chat(person: persons[0], messages: [messages[0], messages[1], messages[2], messages[3], messages[4]]),
+    static let chatsForUser1 = [
+        Chat(person: persons[3], messages: [messages[5], messages[6]]),
+        Chat(person: persons[5], messages: [messages[8]])
+    ]
+    
+    static let chatsForUser2 = [
         Chat(person: persons[3], messages: [messages[5], messages[6]]),
         Chat(person: persons[5], messages: [messages[7], messages[8]])
     ]
     
-    // 2. create a map from person to chat - connect the person to the login
-    static let chatsMap = ["Wendy": chats[0],
-                           "Lily" : chats[1],
-                           "Josh" : chats[2]
+    static let chatsForUser3 = [
+        Chat(person: persons[0], messages: [messages[0], messages[1], messages[3], messages[4]]),
+        Chat(person: persons[3], messages: [messages[5], messages[6]]),
     ]
     
-    // 3. switch
-    @Published var chats = chats
+    static let allchats = [chatsForUser1, chatsForUser2]
+    
+    
+    static let chatsMap = ["Wendy": chatsForUser1,
+                           "Lily" : chatsForUser2,
+                           "Josh" : chatsForUser3]
+    
+    @Published var chats: [Chat] = chatsMap["Lily"] ?? []
+    
     func getSortedFiltereChats(query: String) -> [Chat] {
+        // put some error handlings here
+        func changeUsername(username: String){
+            self.chats = ChatsViewModel.chatsMap[username]
+        }
         let sortedChats = chats.sorted {
             guard let date1 = $0.messages.last?.date else {return false}
             guard let date2 = $1.messages.last?.date else {return false}

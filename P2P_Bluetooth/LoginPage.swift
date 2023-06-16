@@ -43,7 +43,7 @@ struct LoginPageView: View {
                     .background(Color.blue)
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: ListNameView(), isActive: $showingLoginScreen) {
+                    NavigationLink(destination: ListNameView(username), isActive: $showingLoginScreen) {
                         EmptyView()
                     }
                 }

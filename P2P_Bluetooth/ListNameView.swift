@@ -10,6 +10,13 @@ import SwiftUI
 struct ListNameView: View {
     @StateObject var ViewModel = ChatsViewModel()
     @State private var query = ""
+    private var username: String
+    init(_ username: String) {
+        self.username = username
+        ViewModel.changeUsername(username: username)
+    }
+    
+    
     
 
     var body: some View {
@@ -55,6 +62,6 @@ struct ListNameView: View {
 // two maps to handle the user names and IDs
 struct ListNameView_Previews: PreviewProvider {
             static var previews: some View {
-                ListNameView()
+                ListNameView("Lily")
             }
         }

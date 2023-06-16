@@ -10,6 +10,7 @@ import SwiftUI
 struct ChatRoomView: View {
     @EnvironmentObject var ViewModel: ChatsViewModel
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    
     let chat: Chat
     
     @State private var text = ""
