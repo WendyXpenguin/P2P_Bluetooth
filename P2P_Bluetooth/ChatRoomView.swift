@@ -62,7 +62,8 @@ struct ChatRoomView: View {
         }
         .padding(.top, 1)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarItems(leading: navBarTrailingBtn, trailing: navBarLeadingBtn)
+        .navigationBarItems(trailing: navBarLeadingBtn)
+        .navigationBarItems(trailing: navBarTrailingBtn)
         .onAppear{
             ViewModel.markAsUnread(false, chat: chat)
         }

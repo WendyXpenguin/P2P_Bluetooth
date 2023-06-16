@@ -10,7 +10,7 @@ import SwiftUI
 struct ListNameView: View {
     @StateObject var ViewModel = ChatsViewModel()
     @State private var query = ""
-    private var username: String
+    public var username: String
     
     init(_ username: String) {
         self.username = username
