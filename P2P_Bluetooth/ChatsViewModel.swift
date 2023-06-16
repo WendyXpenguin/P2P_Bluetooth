@@ -10,7 +10,7 @@ import Foundation
 class ChatsViewModel: ObservableObject {
     // arrays of persons, messages, and chats
     // person[0], message[0]
-    // pass the name of the users
+    // pass the name of the usersz
     // 1. do the thing above
     static let persons = [Person(name: "Wendy", imgString: "img1"), Person(name:"Dr. Mendes", imgString: "img2"), Person(name: "Sam", imgString: "img3"), Person(name: "Lily", imgString: "img4"), Person(name: "Erica", imgString: "img5"), Person(name: "Josh", imgString: "img6")]
     static let messages = [

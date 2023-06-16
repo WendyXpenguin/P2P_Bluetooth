@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatRoomView: View {
     @EnvironmentObject var ViewModel: ChatsViewModel
-    
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     let chat: Chat
     
     @State private var text = ""
@@ -18,6 +18,24 @@ struct ChatRoomView: View {
     
     var body: some View {
         VStack(spacing: 0) {
+            Spacer()
+                    .navigationBarBackButtonHidden(true)
+                   .toolbar(content: {
+                       ToolbarItem (placement: .navigationBarLeading)  {
+                                
+                           Button(action: {
+                               presentationMode.wrappedValue.dismiss()
+                           }, label: {
+                               Image(systemName: "arrow.left")
+                               .foregroundColor(.mint)
+                               .padding(.top)
+                               Text("")
+                           })
+                     
+                           
+                           
+                       }
+                       })
             GeometryReader { reader in
                 ScrollView {
                     ScrollViewReader { scrollReader in
@@ -57,7 +75,6 @@ struct ChatRoomView: View {
                     .resizable()
                     .frame(width: 35, height: 35)
                     .clipShape(Circle())
-                
                 Text(chat.person.name).bold()
             }
             .foregroundColor(.black)
