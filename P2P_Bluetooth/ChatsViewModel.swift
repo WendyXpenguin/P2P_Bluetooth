@@ -49,7 +49,7 @@ class ChatsViewModel: ObservableObject {
                            "Lily" : chatsForUser2,
                            "Josh" : chatsForUser3]
     
-    @Published var chats: [Chat] = chatsMap["Lily"] ?? []
+    @Published var chats: [Chat] = chatsMap[LoginPageView().username] ?? []
     
     func changeUsername(username: String){
         self.chats = ChatsViewModel.chatsMap[username] ?? []

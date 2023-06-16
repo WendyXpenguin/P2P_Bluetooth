@@ -61,6 +61,6 @@ struct ListNameView: View {
 // two maps to handle the user names and IDs
 struct ListNameView_Previews: PreviewProvider {
             static var previews: some View {
-                ListNameView("Lily")
+                ListNameView(LoginPageView().username)
             }
         }
