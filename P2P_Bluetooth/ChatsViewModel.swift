@@ -39,7 +39,7 @@ class ChatsViewModel: ObservableObject {
     
     static let chatsForUser3 = [
         Chat(person: persons[0], messages: [messages[0], messages[1], messages[3], messages[4]]),
-        Chat(person: persons[3], messages: [messages[5], messages[6]]),
+        Chat(person: persons[1], messages: [messages[5], messages[6]]),
     ]
     
     static let allchats = [chatsForUser1, chatsForUser2]
@@ -51,11 +51,13 @@ class ChatsViewModel: ObservableObject {
     
     @Published var chats: [Chat] = chatsMap["Lily"] ?? []
     
+    func changeUsername(username: String){
+        self.chats = ChatsViewModel.chatsMap[username] ?? []
+    }
+    
     func getSortedFiltereChats(query: String) -> [Chat] {
         // put some error handlings here
-        func changeUsername(username: String){
-            self.chats = ChatsViewModel.chatsMap[username]
-        }
+        
         let sortedChats = chats.sorted {
             guard let date1 = $0.messages.last?.date else {return false}
             guard let date2 = $1.messages.last?.date else {return false}

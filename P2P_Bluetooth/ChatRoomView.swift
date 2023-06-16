@@ -179,7 +179,7 @@ struct ChatRoomView: View {
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            ChatRoomView(chat: ChatsViewModel.chats[0])
+            ChatRoomView(chat: ChatsViewModel.chatsForUser1[0])
                 .environmentObject(ChatsViewModel())
         }
     }
