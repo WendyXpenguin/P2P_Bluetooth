@@ -28,18 +28,18 @@ class ChatsViewModel: ObservableObject {
     ]
     
     static let chatsForUser1 = [
-        Chat(person: persons[3], messages: [messages[5], messages[6]]),
-        Chat(person: persons[5], messages: [messages[8]])
+        Chat(person: persons[0], messages: [messages[5], messages[6]]),
+        Chat(person: persons[1], messages: [messages[8]])
     ]
     
     static let chatsForUser2 = [
-        Chat(person: persons[3], messages: [messages[5], messages[6]]),
-        Chat(person: persons[5], messages: [messages[7], messages[8]])
+        Chat(person: persons[2], messages: [messages[5], messages[6]]),
+        Chat(person: persons[3], messages: [messages[7], messages[8]])
     ]
     
     static let chatsForUser3 = [
-        Chat(person: persons[0], messages: [messages[0], messages[1], messages[3], messages[4]]),
-        Chat(person: persons[1], messages: [messages[5], messages[6]]),
+        Chat(person: persons[4], messages: [messages[0], messages[1], messages[3], messages[4]]),
+        Chat(person: persons[5], messages: [messages[5], messages[6]]),
     ]
     
     static let allchats = [chatsForUser1, chatsForUser2]
