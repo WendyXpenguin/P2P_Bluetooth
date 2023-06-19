@@ -13,15 +13,15 @@ class ChatsViewModel: ObservableObject {
         
     }
     
-    static let persons = [Person(name: "Wendy", imgString: "img1"), Person(name:"Dr. Mendes", imgString: "img2"), Person(name: "Sam", imgString: "img3"), Person(name: "Lily", imgString: "img4"), Person(name: "Erica", imgString: "img5"), Person(name: "Josh", imgString: "img6")]
+    static let persons = [Person(name: "Jack", imgString: "img1"), Person(name:"Dr. Mendes", imgString: "img2"), Person(name: "Sam", imgString: "img3"), Person(name: "Lily", imgString: "img4"), Person(name: "Erica", imgString: "img5"), Person(name: "Josh", imgString: "img6")]
     
     static let messages = [
         Message("Hey Wendy", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
-        Message("Hey Sunny, What are you doing?", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
+        Message("Hey Jack, What are you doing?", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
         Message("I am jsut developing an WhatsApp Clone App", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
         Message("Oh wow, that is really cool", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 2)),
         Message("Yeah, I have been pretty busy with it", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1)),
-        Message("Hi Sunny", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
+        Message("Hi Jack", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
         Message("I am bored", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 3)),
         Message("How are you doing today?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 10)),
         Message("Not much. Just enjoying the summer", type: .Received, date: Date(timeIntervalSinceNow: -86400 * 10))
@@ -42,7 +42,7 @@ class ChatsViewModel: ObservableObject {
         Chat(person: persons[5], messages: [messages[5], messages[6]]),
     ]
     
-    static let allchats = [chatsForUser1, chatsForUser2]
+//    static let allchats = [chatsForUser1, chatsForUser2]
     
     
     static let chatsMap = ["Wendy": chatsForUser1,
@@ -50,8 +50,7 @@ class ChatsViewModel: ObservableObject {
                            "Josh" : chatsForUser3]
     
     // make sure Lily gets changed to username...
-    @Published var chats: [Chat] = (chatsMap[changeUsername(LoginPageView(username: changeUsername(username: String)))] ?? [])
-    
+    @Published var chats: [Chat] = chatsMap["Lily"] ?? []
     // Try:
     // LoginPageView().username - shows nothing on the screen
     // 

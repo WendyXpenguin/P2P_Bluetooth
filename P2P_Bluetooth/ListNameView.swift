@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListNameView: View {
-    @StateObject var ViewModel = ChatsViewModel()
+    @State var ViewModel = ChatsViewModel()
     @State private var query = ""
     public var username: String
     
@@ -20,7 +20,7 @@ struct ListNameView: View {
 
     var body: some View {
         NavigationView{
-            List {ForEach(ViewModel.getSortedFiltereChats(query: query)) { chat in
+            List {ForEach(ViewModel.chats) { chat in
                 ZStack{
                     ChatRow(chat: chat)
                     NavigationLink(destination: {
