@@ -20,7 +20,6 @@
 		8F863A9E2A378A4F00226E99 /* Date+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863A9D2A378A4F00226E99 /* Date+Helper.swift */; };
 		8F863AA02A378F4A00226E99 /* ChatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863A9F2A378F4A00226E99 /* ChatsViewModel.swift */; };
 		8F863AA22A37921A00226E99 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F863AA12A37921A00226E99 /* ChatRoomView.swift */; };
-		8F9FCF8B2A3A3A6E00B41372 /* NavigationCustomize.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9FCF8A2A3A3A6E00B41372 /* NavigationCustomize.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		8F863A9D2A378A4F00226E99 /* Date+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helper.swift"; sourceTree = "<group>"; };
 		8F863A9F2A378F4A00226E99 /* ChatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModel.swift; sourceTree = "<group>"; };
 		8F863AA12A37921A00226E99 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; usesTabs = 0; };
-		8F9FCF8A2A3A3A6E00B41372 /* NavigationCustomize.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationCustomize.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 		8F7673EA2A337B6300387F23 /* P2P_Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				8F9FCF8A2A3A3A6E00B41372 /* NavigationCustomize.storyboard */,
 				8F262A4D2A38F0E7006DCB9B /* LoginPage.swift */,
 				8F863AA12A37921A00226E99 /* ChatRoomView.swift */,
 				8F7673ED2A337B6300387F23 /* ListNameView.swift */,
@@ -254,7 +251,6 @@
 			files = (
 				8F7673F32A337B6500387F23 /* Preview Assets.xcassets in Resources */,
 				8F7673F02A337B6500387F23 /* Assets.xcassets in Resources */,
-				8F9FCF8B2A3A3A6E00B41372 /* NavigationCustomize.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
